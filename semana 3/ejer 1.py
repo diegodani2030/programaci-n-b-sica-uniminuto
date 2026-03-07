@@ -1,0 +1,17 @@
+a=7.5
+b=20
+print(a+b)
+print(a/b)
+print(a*b)
+print(a-b)
+print(a//b)
+print(a%b)
+print(f'la suma es:{a+b}')
+print(f'la resta es:{a-b}')
+print(f'la multiplicación es:{a*b}')
+print(f'la división es:{a/b}')
+print(f'la diferencia es:{a//b}')
+print(f'el residuo es:{a%b}')
+print(a<b)
+print(a>b)
+print(a==b)
