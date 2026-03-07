@@ -12,5 +12,5 @@
 a = int(input("ingrese la base del triangulo:"))
 b = int(input("ingrese la altura del triangulo:"))
 c = (a*b)/2
-print("la base del trinagulo es:",c)
+print("el area del trinagulo es:",c)
 print(f'la base del triangulo es mayor a 100?:{c>100}')
