@@ -1,0 +1,16 @@
+#Algoritmo
+#ingrese el valor de la base del trinagulo
+#ingrese la altura del triangulo
+#calcular la base del triangulo 
+#comparar el resultado con el numero 100
+#pseudocodigo
+#leer base_triangulo
+#leer altura_triangulo
+#are = (base_triangulo * altura_triangulo)/2
+#escribir si el area del triangulo es mayor a 100
+
+a = int(input("ingrese la base del triangulo:"))
+b = int(input("ingrese la altura del triangulo:"))
+c = (a*b)/2
+print("la base del trinagulo es:",c)
+print(f'la base del triangulo es mayor a 100?:{c>100}')
