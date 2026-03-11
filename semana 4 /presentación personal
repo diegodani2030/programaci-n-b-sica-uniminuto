@@ -19,7 +19,7 @@
 nombre = input("ingrese su nombre:")
 edad = int(input("ingrese su edad:"))
 ciudad = input("ingrese su ciudad:")
-a = edad < 18
+a = edad <= 18
 print(f'hola, me llamo {nombre}')
 print(f'tengo {edad}')
 print(f'soy de {ciudad}')
