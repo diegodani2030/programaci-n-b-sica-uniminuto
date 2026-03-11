@@ -1,0 +1,27 @@
+#ESCRIBIR "la resta de sus numeros son:", resta
+#ESCRIBIR "la división de sus numeros son:", división
+#ESCRIBIR "la división entera de sus numeros son:", division_entera
+#ESCRIBIR "la multiplicación de sus numeros son:", multiplicación
+#ESCRIBIR "el residuo de sus numeros son:", residuo
+#ESCRIBIR "la potencia de sus numeros son:", potencia
+a = float(input("ingrese un numero:"))
+b = float(input("ingrese otro numero:"))
+
+suma = a + b
+resta = a - b
+división = a / b
+division_entera = a // b
+multiplicacion = a * b
+residuo = a % b
+suma = a + b
+potencia = a ** b
+mayor = suma > 100
+
+print("la suma de sus numeros son:", suma)
+print("la resta de sus numeros son:", resta)
+print("la división de sus numeros son:", división)
+print("la división entera de sus numeros son:", division_entera)
+print("la multiplicación de sus numeros son:", multiplicacion)
+print("el residuo de sus numeros son:", residuo)
+print("la potencia de sus numeros son:", potencia)
+print("la suma es mayor a 100:", mayor)
