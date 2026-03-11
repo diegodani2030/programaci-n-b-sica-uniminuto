@@ -1,0 +1,26 @@
+#Pedir al usuario que ingrese su nombre
+#Pedir al usuario que ingrese su edad
+#pedir al usuario que ingrese su ciudad de referencia
+#mostrar cada una de las variables es una frase de presentacion
+#Por ultimo compare si es mayor de edad o menor de edad
+#INICIO
+#ESCRIBIR "ingrese su nombre:"
+#LEER nombre
+#ESCRIBIR "ingrese su edad:"
+#LEER edad
+#ESCRIBIR "ingrese su ciudad de referencia:"
+#LEER ciudad
+#ESCRIBIR "hola me llamo", nombre
+#ESCRIBIR "tengo",edad,"anos"
+#ESCRIBIR "soy de",ciudad
+#a <- edad < 18
+#ESCRIBIR "es mayo de edad?",a
+
+nombre = input("ingrese su nombre:")
+edad = int(input("ingrese su edad:"))
+ciudad = input("ingrese su ciudad:")
+a = edad < 18
+print(f'hola, me llamo {nombre}')
+print(f'tengo {edad}')
+print(f'soy de {ciudad}')
+print(f'soy mayor de edad: {a}')
