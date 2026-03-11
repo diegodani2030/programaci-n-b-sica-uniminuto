@@ -1,9 +1,28 @@
+#Pedir al usuario un numero entero
+#Pedir al usuario otro numero entero
+#hacer las posibles operaciones matematicas para recrear una calculadora
+#por ultimo hacer ka comparacion si la suma es mayor a 100
+#INICIO
+#ESCRIBIR "ingrese un numero:"
+#LEER a
+#ESCRIBIR "ingrese otro numero:"
+#LEER b
+#suma <- a + b
+#resta <- a - b
+#division <- a / b
+#division_entera <- a // b
+#multiplicacion <- a * b
+#residuo <- a % b
+#potencia <- a ^ b
+#mayor <- suma > 100
+#ESCRIBIR "la suma de sus numeros son:", suma
 #ESCRIBIR "la resta de sus numeros son:", resta
 #ESCRIBIR "la división de sus numeros son:", división
 #ESCRIBIR "la división entera de sus numeros son:", division_entera
 #ESCRIBIR "la multiplicación de sus numeros son:", multiplicación
 #ESCRIBIR "el residuo de sus numeros son:", residuo
 #ESCRIBIR "la potencia de sus numeros son:", potencia
+#ESCRIBIR "la suma es mayor a 100?:", c
 a = float(input("ingrese un numero:"))
 b = float(input("ingrese otro numero:"))
 
