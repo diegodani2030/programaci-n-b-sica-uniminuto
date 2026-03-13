@@ -1,0 +1,39 @@
+#Pedir al usuario que ingrese el nombre del producto
+#Pedir al usuario que ingrese el precio unitario
+#Pedir al usuario que ingrese la cantidad unidades
+#mostrar el subtotal multiplicacion el precio con la cantidad de unidades
+#mostrar el IVA multiplicado con subtotal
+#mostrar el total 
+#mostrar si aplica el descuento si supera los $50000
+#INICIO
+#ESCRIBIR "ingrese el nombre del producto"
+#LEER a
+#ESCRIBIR "ingrese el precio unitario"
+#LEER b
+#ESCRIBIR "ingrese la cantidad de unidades"
+#LEER c
+#Subtotal <- b * c
+#IVA <- subtotal * 0.19
+#TOTAL <- IVA + Subtotal
+#DESCUENTO <- total > 50000
+#ESCRIBIR "producto:",a
+#ESCRIBIR "precio unitario:",b
+#ESCRIBIR "cantidad de unidades:",c
+#ESCRIBIR "subtotal:",Subtotal
+#ESCRIBIR "IVA:",IVA
+#ESCRIBIR "total:",TOTAL
+#ESCRIBIR "Aplica descuento especial?:",DECUENTO
+a = input("ingrese el nombre del producto:")
+b = float(input("ingrese el precio unitario:"))
+c = float(input("ingrese la cantidad de unidades:"))
+subtotal = b * c
+iva = subtotal * 0.19
+total = iva + subtotal
+descuento = total > 50000
+print("Producto:",a)
+print("precio:",b)
+print("Cantidad:",c)
+print("Subtotal:",subtotal)
+print("IVA:",iva)
+print("Total:",total)
+print("Aplica descuento especial?:",descuento)
