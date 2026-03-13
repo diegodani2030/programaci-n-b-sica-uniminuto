@@ -1,0 +1,23 @@
+#Pedir al usuario que ingrese una temperatura en celsius
+#convertir los grados celsius a Farenheit 
+#convertir los grados celsius a kelvin
+#luego mostrarlo en el programa haciendo la conversion 
+#por ultimo comparar si la temperatura supera a los 37 grados celsius
+#INICIO
+#ESCRIBIR "la termperatura de grados celsius"
+#LEER a
+#b <- (a*1.8) + 32
+#ESCRIBIR "la temperatura a grados fahrenheit es:",b
+#c <- a + 273.15
+#ESCRIBIR "la temperatura a grados kelvin es:",c
+#fiebre <- a < 37
+#ESCRIBIR "supera la temperatura de fiebre?:",fiebre
+
+a = float(input("ingrese la temperatura de grados celsius:"))
+b = (a*1.8) + 32
+c = a + 273.15 
+fiebre = a > 37
+print(f'los grados en celsius son: {a}')
+print(f'los grados en fahrenheit son: {b}')
+print(f'los grados en kelvin son: {c}')
+print(f'supera la temperatura de fiebre?: {fiebre}')
