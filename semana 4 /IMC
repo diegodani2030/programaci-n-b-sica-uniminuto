@@ -1,0 +1,30 @@
+#Solicitar al usuario su nombre, peso en kilogramos y altura en metros
+#Calcular el Indice de Masa Corporal usando la formula: IMC = peso / (altura * altura)
+#Mostrar el nombre, peso, altura y el IMC calculado
+#Comparar si el IMC esta en rango normal (mayor o igual a 18.5 y menor o igual a 24.9)
+#INICIO
+#ESCRIBIR "Ingrese su nombre:"
+#LEER nombre
+#ESCRIBIR "Ingrese su peso en kilogramos:"
+#LEER peso
+#ESCRIBIR "Ingrese su altura en metros:"
+#LEER altura
+#imc <- peso / (altura * altura)
+#rango_normal <- imc >= 18.5 y imc <= 24.9
+#ESCRIBIR "Nombre :", nombre
+#ESCRIBIR "Peso   :", peso, "kg"
+#ESCRIBIR "Altura :", altura, "m"
+#ESCRIBIR "IMC    :", imc
+#ESCRIBIR "IMC en rango normal (18.5 - 24.9)?:", rango_normal
+#FIN
+
+nombre = input("Ingrese su nombre: ")
+peso = float(input("Ingrese su peso en kilogramos: "))
+altura = float(input("Ingrese su altura en metros: "))
+imc = peso / (altura * altura)
+rango_normal = imc >= 18.5 and imc <= 24.9
+print("Nombre:", nombre)
+print("Peso:", peso, "kg")
+print("Altura:", altura, "m")
+print("IMC:", round(imc, 3))
+print("IMC en rango normal (18.5 - 24.9)?:", rango_normal)
