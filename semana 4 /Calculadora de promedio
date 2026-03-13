@@ -1,0 +1,25 @@
+#Pedir al usuario que ingrese tres notas
+#convertir el promedio con las tres notas
+#sumar los tres y dividirlos por 3
+#luego mostrarlo en el programa el promedio de las notas
+#INICIO
+#ESCRIBIR "ingrese una de las notas"
+#LEER a
+#ESCRIBIR "ingrese otra de las notas"
+#LEER b
+#ESCRIBIR "ingrese otra de las notas"
+#LEER c
+#promedio <- (a+b+c)/3
+#ESCRIBIR "Su promedio es:",promedio
+#d <- promedio >= 3.0
+#ESCRIBIR "aprobo con la nota 3.0?:"
+a = float(input("ingrese una de las notas:"))
+b = float(input("ingrese otra de las notas:"))
+c = float(input("ingrese otra de las notas:"))
+promedio = (a+b+c)/3
+d = promedio >= 3.0
+print("nota 1:",a)
+print("nota 2:",b)
+print("nota 3:",c)
+print("Promedio:",promedio)
+print("aprobo con la nota 3.0?:",d)
