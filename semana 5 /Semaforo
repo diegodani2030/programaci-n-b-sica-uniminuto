@@ -1,0 +1,21 @@
+#pedir al usuario que ingrese el color del semaforo
+#si el semaforo esta en verde pasar
+#si el semaforo esta en amarillo preparase
+#si el semaforo esta en rojo no pasar
+#INICIO
+#ESCRIBIR "ingrese el color del semaforo"
+#LEER a
+#si a == "verde"
+#ESCRIBIR "puede pasar"
+#si a == "amarillo"
+#ESCRIBIR "prepararse-alerta"
+#si a == "rojo"
+#ESCRIBIR "no puede pasar"
+
+a = input("ingrese el color del semaforo:")
+if a == "verde":
+    print("puede pasar")
+elif a == "amarillo":
+    print("preparase-alerta")
+elif a == "rojo":
+    print("no pasar")
