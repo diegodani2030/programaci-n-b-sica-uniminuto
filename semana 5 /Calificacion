@@ -1,0 +1,18 @@
+#Calificacion
+#pedir al usuario que ingrese una nota
+#se debe comparar con 3.0 
+#si es mayor de 3.0 aprobo
+#si es menor de 3.0 reprobo
+#INICIO
+#ESCRIBIR "ingrese una nota"
+#LEER a
+#si a >= 3.0
+#ESCRIBIR "aprobo la materia"
+#sino
+#ESCRIBIR "perdio la materia"
+a=float(input("ingrese una nota"))
+if a >= 3.0:
+    print ("paso la materia")
+
+else :
+    print("perdio la materia")
