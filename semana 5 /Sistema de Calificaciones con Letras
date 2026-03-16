@@ -1,0 +1,47 @@
+#El usuario debe ingresar su nota
+#si su nota es igual o mayor a 4.5 se le asigna la letra A
+#si su nota esta entre el rango de 4.0-4.4 se le asigna la letra B
+#si su nota esta entre el rango de 3.5-3.9 se le asigna la letra C
+#si su nota esta entre el rango de 3.0-3.4 se le asigna la letra D
+#si su nota esta entre el rango de 0.0-2.9 se le asigna la letra E
+#si la nota es de 2.0 y 2.9 se requiere rehabilitacion
+#INICIO
+#ESCRIBIR "ingrese una nota"
+#LEER a
+#SI a >= 4.5 
+#ESCRIBIR "exelente nota aprobaste con A"
+#SI a >= 4.0 and a <= 4.4
+#ESCRIBIR "Sobresaliente nota aprobaste con B"
+#Si a >= 3.5 and a <= 3.9
+#ESCRIBIR "Buena nota aprobaste con C"
+#Si a >= 3.0 and a <= 3.4
+#ESCRIBIR "Aceptable nota aprobaste con D"
+#Si a >= 0.0 and a <= 2.9
+#ESCRIBIR "Reprobaste con E"
+#Si a >= 2.0 and a <= 2.9
+#ESCRIBIR "Se requiere habilitacion en la materia"
+a = float(input("ingrese una nota:"))
+
+if a >= 4.5:
+
+    print("exelente nota aprobaste con A")
+
+elif a >= 4.0 and a <= 4.4:
+
+    print("Sobresaliente nota aprobaste con B")
+
+elif a >= 3.5 and a <= 3.9:
+
+    print ("Buena nota aprobaste con C")
+
+elif a >= 3.0 and a <= 3.4:
+
+    print("Aceptable nota aprobaste con D")
+
+elif a >= 0.0 and a <= 1.9:
+
+    print("Reprobaste con E y no tienes derecho a la habilitacion")
+
+elif a >= 2.0 and a <= 2.9:
+
+    print("Reprobaste con E pero puede presentar habilitacion en la materia")
