@@ -1,0 +1,28 @@
+#Clasificador de Temperatura
+#INICIO
+#ESCRIBIR "Ingrese la temperatura en °C:"
+#LEER temp
+#SI temp < 5:
+#ESCRIBIR "MUY FRÍO: Usa ropa de invierno"
+#SINO SI temp <= 14:
+#ESCRIBIR "FRÍO: Abrígate un poco"
+#SINO SI temp <= 24:
+#ESCRIBIR "TEMPLADO: Ropa cómoda de diario"
+#SINO SI temp <= 34:
+#ESCRIBIR "CALIENTE: Ropa ligera"
+#SINO:
+# ESCRIBIR "MUY CALIENTE: Hidrátate bien"
+#FIN
+
+temp = int(input("Ingrese la temperatura en °C: "))
+
+if temp < 5:
+    print("MUY FRÍO: Usa ropa de invierno")
+elif temp <= 14:
+    print("FRÍO: Abrígate un poco")
+elif temp <= 24:
+    print("TEMPLADO: Ropa cómoda de diario")
+elif temp <= 34:
+    print("CALIENTE: Ropa ligera")
+else:
+    print("MUY CALIENTE: Hidrátate bien")
