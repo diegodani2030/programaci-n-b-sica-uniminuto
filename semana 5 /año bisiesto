@@ -1,0 +1,19 @@
+#Verificador de Año Bisiesto
+#pedir al usuario que ingrese un año
+#el programa debe verificar si es un año bisiesto es decir tiene un dia de mas
+#INICIO
+#ESCRIBIR "ingrese un año:"
+#LEER aa
+#bisiesto <- (a % 4 == 0 AND a % 100 != 0) OR (a % 400 == 0)
+#SI bisiesto:
+#    ESCRIBIR "El año XXXX ES bisiesto (366 días)"
+#SINO
+#    ESCRIBIR "El año XXXX NO es bisiesto (365 días)"
+#FIN
+
+a = int(input("Ingrese un año: "))
+
+if (a % 4 == 0 and a % 100 != 0):
+    print(f"El año {a} ES bisiesto (366 días)")
+else:
+    print(f"El año {a} NO es bisiesto (365 días)")
