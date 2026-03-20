@@ -1,0 +1,36 @@
+#Validador de Triángulo
+#pedir al usuario que ingrese un lado
+#pedir al usuario que ingrese otro lado
+#pedir al usuario que ingrese otro lado
+#verificar segun las medidas de sus lados si es equilatero-isosceleso o escaleno
+#INICIO
+#ESCRIBIR "ingrese lado A:"
+#LEER a
+#ESCRIBIR "ingrese lado B:"
+#LEER b
+#ESCRIBIR "ingrese lado C:"
+#LEER c
+#SI (a+b > c) AND (a+c > b) AND (b+c > a):
+#SI a==b AND b==c:
+#ESCRIBIR "Triángulo EQUILÁTERO"
+#SINO SI a==b OR b==c OR a==c:
+#ESCRIBIR "Triángulo ISÓSCELES"
+#SINO:
+#ESCRIBIR "Triángulo ESCALENO"
+#SINO:
+#ESCRIBIR "NO forman un triángulo"
+#FIN
+
+a = float(input("Ingrese lado A: "))
+b = float(input("Ingrese lado B: "))
+c = float(input("Ingrese lado C: "))
+
+if (a + b > c) and (a + c > b) and (b + c > a):
+    if a == b and b == c:
+        print("Triángulo EQUILÁTERO")
+    elif a == b or b == c or a == c:
+        print("Triángulo ISÓSCELES")
+    else:
+        print("Triángulo ESCALENO")
+else:
+    print("NO forman un triángulo")
