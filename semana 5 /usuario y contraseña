@@ -1,0 +1,66 @@
+#pedir al usuario que ingrese su usuario
+#pedir al usuario que ingrese su contraseña
+#El sistema revisa si son correctos 3 veces
+#si no es correcto mostrar "error"
+#INICIO
+#ESCRIBIR "ingrese su nombre de usuario:"
+#LEER a
+#ESCRIBIR "ingrese su contraseña:"
+#LEER b
+#SI a == "admin" and b == "uniminuto2024"
+#ESCRIBIR "Acceso concedido"
+#sino 
+#ESCRIBIR "nbo tiene acceso"
+#SI a == "admin" and b == "uniminuto2024"
+#ESCRIBIR "Acceso concedido"
+#sino 
+#ESCRIBIR "nbo tiene acceso"
+#SI a == "admin" and b == "uniminuto2024"
+#ESCRIBIR "Acceso concedido"
+#sino 
+#ESCRIBIR "nbo tiene acceso"
+USUARIO_VALIDO = 'admin'
+CLAVE_VALIDA   = 'uniminuto2024'
+
+acceso = False  
+
+usuario = input("Intento 1 - Usuario: ")
+clave   = input("Intento 1 - Contraseña: ")
+
+if usuario == USUARIO_VALIDO:
+    if clave == CLAVE_VALIDA:
+        print(f"Acceso concedido. Bienvenido, {usuario}!")
+        acceso = True
+    else:
+        print("Contraseña incorrecta. Te quedan 2 intentos.")
+else:
+    print("Usuario no encontrado. Te quedan 2 intentos.")
+
+if acceso == False:
+    usuario = input("Intento 2 - Usuario: ")
+    clave   = input("Intento 2 - Contraseña: ")
+
+    if usuario == USUARIO_VALIDO:
+        if clave == CLAVE_VALIDA:
+            print(f"Acceso concedido. Bienvenido, {usuario}!")
+            acceso = True
+        else:
+            print("Contraseña incorrecta. ¡Último intento!")
+    else:
+        print("Usuario no encontrado. ¡Último intento!")
+
+if acceso == False:
+    usuario = input("Intento 3 - Usuario: ")
+    clave   = input("Intento 3 - Contraseña: ")
+
+    if usuario == USUARIO_VALIDO:
+        if clave == CLAVE_VALIDA:
+            print(f"Acceso concedido. Bienvenido, {usuario}!")
+            acceso = True
+        else:
+            print("Contraseña incorrecta.")
+    else:
+        print("Usuario no encontrado.")
+
+if acceso == False:
+    print("Sistema bloqueado. Demasiados intentos fallidos.")
