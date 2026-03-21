@@ -1,0 +1,31 @@
+#Consumo de agua
+#Pedir al usuario que ingrese su nombre
+#Pedir al usuario que ingrese su consumo mensual de agua en metros cúbicos
+#el programa debe dentificar el cansumo siguiento estas reglas
+#si el consumo es de 1 a 15 metros cubicos es bajo consumo
+#al usuario se le debe mostrar este texto "¡Excelente! Eres un usuario responsable del agua"
+#si el consumo es de 16 a 30 metros cubicos es consumo normal
+#al usuario se le debe mostrar este texto "Tu consumo está dentro del promedio del hogar"
+#si el consumo es de mas de 30 metros cubicos es Alto consumo
+#al usuario se le debe mostrar este texto "Atención: tu consumo es alto, revisa posibles fugas"
+#si el consumo es de 0 o negativo es dato invalido
+#al usuario se le debe mostrar este texto "Error: el consumo debe ser mayor a 0"
+#Por ultimo debe mostrar el nombre del usuario, la categoria y el mensaje correspondiente
+a = input("Por favor ingresar su nombre:")
+b = int(input("por favor ingrese su consumo mensual de agua en metros cubicos:"))
+
+if b >= 1 and b <= 15:
+     
+    print(f'{a} su consumo es bajo es de {b} metros cubicos, ¡Excelente! Eres un usuario responsable del agua')
+
+elif b >= 16 and b <= 30:
+
+    print(f'{a} su consumo es normal es de {b} metros cubicos, Tu consumo está dentro del promedio del hogar')
+
+elif b > 30:
+
+    print(F'{a} su consumo es alto es de {b} metros cubicos, Atención: tu consumo es alto, revisa posibles fugas')
+
+elif b < 0:
+
+    print(f'{a} su dato es invalido, Error: el cosumo debe ser mayor a 0')
