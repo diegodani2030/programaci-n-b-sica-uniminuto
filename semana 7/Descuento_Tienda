@@ -1,0 +1,13 @@
+a = input("Eres estudiante (si/no)")
+b = float(input("total de tu compra en pesos:"))
+if a == "si" or b > 200000:
+
+    c = b * 0.15
+    d = b - c
+    print("Descuento aplicado del 15%!")
+    print(f'descuento: ${c}')
+    print(f'Total a pagar: ${d}')
+
+else:
+
+    print(f'Sin descuento. Total: ${b}')
