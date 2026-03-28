@@ -1,7 +1,7 @@
 a = input("ingrese su nombre de usuario:")
 b = int(input("ingrese una contraseña segura:"))
 
-if a == 'admin' and b == '1234':
+if a == 'admin' and b == 1234:
 
     print("Acesso concedido. Bienvenido!")
     print("Cargando tu perfil...")
