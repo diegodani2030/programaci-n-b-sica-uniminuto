@@ -1,0 +1,16 @@
+a = input("ingrese temperatura en grados Celsius:")
+if a < 0:
+
+    print("BAJO CERO: congelación")
+
+elif a >= 0 and a < 15:
+
+    print("FRIO")
+
+elif a > 15 and a <= 25:
+
+    print("CALIDA")
+
+elif a > 25 and a <= 35:
+
+    print("EXTREMO CALOR")
