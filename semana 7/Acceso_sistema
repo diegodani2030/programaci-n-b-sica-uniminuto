@@ -1,5 +1,5 @@
 a = input("ingrese su nombre de usuario:")
-b = input("ingrese una contraseña segura:")
+b = int(input("ingrese una contraseña segura:"))
 
 if a == 'admin' and b == '1234':
 
