@@ -1,4 +1,4 @@
-a = input("ingrese temperatura en grados Celsius:")
+a = int(input("ingrese temperatura en grados Celsius:"))
 if a < 0:
 
     print("BAJO CERO: congelación")
