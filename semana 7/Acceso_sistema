@@ -1,0 +1,12 @@
+a = input("ingrese su nombre de usuario:")
+b = input("ingrese una contraseña segura:")
+
+if a == 'admin' and b == '1234':
+
+    print("Acesso concedido. Bienvenido!")
+    print("Cargando tu perfil...")
+
+else:
+
+    print("Acceso denegado. DAtos incorrectos.")
+    
