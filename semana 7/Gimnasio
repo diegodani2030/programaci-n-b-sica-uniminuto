@@ -1,0 +1,19 @@
+a = int(input("ingrese su edad:"))
+b = input("tiene Carnet de socio vigente (si/no):")
+
+if a > 14 and b == 'si':
+
+    print ("Puede ingresar al gym")
+
+else:
+
+    c = input("tiene pase de invitado? (si/no):")
+    d = input("viene con un socio activo? (si/no):")
+
+    if c == 'si' or d == 'si':
+
+        print("Puede ingresar al gimnasio")
+
+    else:
+
+        print("No puede ingresar al gimnasio")
