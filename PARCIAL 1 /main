@@ -1,0 +1,30 @@
+
+package Empleados;
+
+public class Empleados {
+
+    public static void main(String[] args) {
+        Empleado empleado1 = new Empleado();
+        empleado1.setNombre("Laura Gomez");
+        empleado1.setCargo("Analista");
+        empleado1.setSalarioBase(2000000);
+        empleado1.setAnosExperiencia(5);
+        System.out.println(empleado1.getNombre());
+        System.out.println(empleado1.getCargo());
+        System.out.println(empleado1.getSalarioBase());
+        System.out.println(empleado1.getAnosExperiencia());
+        System.out.println("\nVER DETALLES");
+        System.out.println(empleado1.verDatalle());
+        System.out.println("\nHORAS TRABAJADAS");
+        System.out.println(empleado1.trabajar());
+        System.out.println("\nDESCANSO DEL TRABAJADOR");
+        System.out.println(empleado1.tomarDescanso());
+        System.out.println("\nCUANTO ES EL DESCANSO DEL TRABAJADOR");
+        System.out.println(empleado1.tomarYDescanso());
+        System.out.println("\nEL BONO");
+        System.out.println(empleado1.calcularBono());
+        System.out.println("\nSALARIO TOTAL DEL EMPLEADO");
+        
+    }
+    
+}
