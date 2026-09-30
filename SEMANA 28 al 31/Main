@@ -1,0 +1,58 @@
+package main;
+
+public class Main {
+    public static void main(String[] args) {
+       
+        Producto producto1 = new Producto();
+        producto1.setNombre("Computador portatil");
+        producto1.setCategoria("Tecnologia");
+        producto1.setPrecio(2500000.0);
+        producto1.setCantidadStock(8);
+
+        
+        Producto producto2 = new Producto();
+        producto2.setNombre("Mouse inalambrico");
+        producto2.setCategoria("Accesorios");
+        producto2.setPrecio(85000.0);
+        producto2.setCantidadStock(20);
+
+        
+        Producto producto3 = new Producto();
+        producto3.setNombre("Teclado");
+        producto3.setCategoria("Accesorios");
+        producto3.setPrecio(120000.0);
+        producto3.setCantidadStock(2);
+
+        System.out.println("DETALLES DE LOS PRODUCTOS");
+        System.out.println(producto1.verDetalle());
+        System.out.println(producto2.verDetalle());
+        System.out.println(producto3.verDetalle());
+
+        System.out.println("\nDESCUENTO (10% x 4 unidades) del producto1");
+        System.out.println(producto1.calcularDescuento(10, 4));
+        
+        System.out.println("\nDESCUENTO (10% x 3 unidades) del producto2");
+        System.out.println(producto2.calcularDescuento(10, 3));
+        
+        System.out.println("\nDESCUENTO (10% x 2 unidades) del producto3");
+        System.out.println(producto3.calcularDescuento(10, 2));
+        
+        System.out.println("\nPRECIO FINAL CON 10% DE DESCUENTO del producto1");
+        System.out.println(producto1.calcularPrecioFinal(10));
+
+        System.out.println("\nPRECIO FINAL CON 10% DE DESCUENTO del producto2");
+        System.out.println(producto2.calcularPrecioFinal(10));
+        
+        System.out.println("\nPRECIO FINAL CON 10% DE DESCUENTO del producto3");
+        System.out.println(producto3.calcularPrecioFinal(10));
+
+        System.out.println("\nVENDER 5 UNIDADES del producto1");
+        System.out.println(producto1.vender(5));
+
+        System.out.println("\nVENDER 30 UNIDADES del producto2");
+        System.out.println(producto2.vender(30));
+        
+        System.out.println("\nVENDER 5 UNIDADES del producto3");
+        System.out.println(producto3.vender(5));
+    }
+}
