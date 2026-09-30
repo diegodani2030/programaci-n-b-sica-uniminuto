@@ -1,0 +1,75 @@
+package main;
+
+public class Producto {
+    private String nombre;
+    private String categoria;
+    private double precio;
+    private int cantidadStock;
+
+    public Producto() {
+    }
+
+    public Producto(String nombre, String categoria, double precio, int cantidadStock) {
+        this.nombre = nombre;
+        this.categoria = categoria;
+        this.precio = precio;
+        this.cantidadStock = cantidadStock;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public int getCantidadStock() {
+        return cantidadStock;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public void setCantidadStock(int cantidadStock) {
+        this.cantidadStock = cantidadStock;
+    }
+    public String verDetalle() {
+        String detalle = "\nproducto.nombre = " +this.nombre;
+        detalle = detalle + "\nProducto.categoria = " +this.categoria;
+        detalle = detalle + "\nProducto.precio = " +this.precio;
+        detalle = detalle + "\nProducto.cantidad en Stock = " +this.cantidadStock;
+        return detalle;
+    }
+    public double calcularDescuento(int porcentaje,int cantidad){
+        return ((this.precio * porcentaje) / 100) * cantidad;
+    }
+    public double calcularDescuento(double porcentaje, int cantidad){
+        return ((this.precio * porcentaje) / 100) * cantidad;
+    }
+    public double calcularPrecioFinal(double porcentaje){
+        return this.precio - this.calcularDescuento(porcentaje, 1);
+    }
+    public String vender(int cantidad){
+        if (cantidad <= this.cantidadStock) {
+            this.cantidadStock = (cantidad-this.cantidadStock);
+            return "venta realizada. Stock restante:" + this.cantidadStock;
+        } else{
+            return "Stock insuficiente. Stock disponible: "+this.cantidadStock;
+        }
+       
+    }
+}
