@@ -1,0 +1,87 @@
+package boleta;
+
+public class boleto {
+
+    
+    private String evento;
+    private String localidad;
+    private double precio;
+    private int disponibles;
+
+    
+    public boleto() {
+    }
+
+    
+    public boleto(String evento, String localidad, double precio, int disponibles) {
+        this.evento = evento;
+        this.localidad = localidad;
+        this.precio = precio;
+        this.disponibles = disponibles;
+    }
+
+    
+    public String getEvento() {
+        return this.evento;
+    }
+
+    public void setEvento(String evento) {
+        this.evento = evento;
+    }
+
+    public String getLocalidad() {
+        return this.localidad;
+    }
+
+    public void setLocalidad(String localidad) {
+        this.localidad = localidad;
+    }
+
+    public double getPrecio() {
+        return this.precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public int getDisponibles() {
+        return this.disponibles;
+    }
+
+    public void setDisponibles(int disponibles) {
+        this.disponibles = disponibles;
+    }
+
+    
+    public String verDetalle() {
+        return "Evento: " + this.evento
+                + "\nLocalidad: " + this.localidad
+                + "\nPrecio: " + this.precio
+                + "\nDisponibles: " + this.disponibles;
+    }
+
+    
+    public double calcularDescuento(int porcentaje) {
+        return this.precio * porcentaje / 100.0;
+    }
+
+    
+    public double calcularDescuento(double porcentaje) {
+        return this.precio * porcentaje / 100.0;
+    }
+
+
+    public double calcularPrecioFinal(double porcentaje) {
+        return this.precio - this.calcularDescuento(porcentaje);
+    }
+
+    public String venderBoletas(int cantidad) {
+        if (cantidad <= this.disponibles) {
+            this.disponibles = this.disponibles - cantidad;
+            return "venta realizada. Stock restante:" + this.disponibles;
+        } else {
+            return "Stock insuficiente. Stock disponible:"+ this.disponibles;
+        }
+    }
+}
