@@ -1,0 +1,36 @@
+
+package boleta;
+public class Boleta {
+    public static void main(String[] args) {
+
+        boleto obj1 = new boleto();
+        obj1.setEvento("Concierto de Rock al Parque");
+        obj1.setLocalidad("Platea");
+        obj1.setPrecio(250000);
+        obj1.setDisponibles(10);
+
+        boleto obj2 = new boleto("Festival Estereo Picnic", "General", 180000, 100);
+
+        System.out.println("Evento: " + obj1.getEvento());
+        System.out.println("Localidad: " + obj1.getLocalidad());
+        System.out.println("Precio: " + obj1.getPrecio());
+        System.out.println("Disponibles: " + obj1.getDisponibles());
+
+        System.out.println("\n--- Detalle objeto 1 ---");
+        System.out.println(obj1.verDetalle());
+
+        System.out.println("\n--- Descuentos ---");
+        System.out.println("Descuento 10 (int): " + obj1.calcularDescuento(10));
+        System.out.println("Descuento 12.5 (double): " + obj1.calcularDescuento(12.5));
+
+        System.out.println("Precio final con 10%: " + obj1.calcularPrecioFinal(10));
+
+        System.out.println("\n--- Venta de boletas ---");
+        System.out.println(obj1.venderBoletas(3));  
+        System.out.println(obj1.venderBoletas(50));  
+
+        System.out.println("\n--- Detalle objeto 2 ---");
+        System.out.println(obj2.verDetalle());
+        System.out.println(obj2.venderBoletas(20));
+    }
+}
